@@ -25,3 +25,20 @@
 # Support
 - neovim 0.9.1
 - nodejs v14+
+
+
+# Better Experience
+- install nerd font
+```shell
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+```
+- install powerline font
+```shell
+# refer to https://github.com/powerline/fonts
+cd
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+```
+
