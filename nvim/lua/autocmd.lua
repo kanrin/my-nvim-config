@@ -10,7 +10,7 @@ local autocmd = vim.api.nvim_create_autocmd
 
 autocmd("BufWritePost", {
 		group = myAutoGroup,
-		pattern = { "*.py", "*.js", "*.json", "*.jsx", "*.go", "*.c", "*.cpp"},
+		pattern = { "*.py", "*.js", "*.jsx", "*.go", "*.c", "*.cpp"},
 		callback = function()
 				vim.api.nvim_command('Format')
 		end,

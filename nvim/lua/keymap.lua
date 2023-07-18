@@ -13,5 +13,5 @@ local map = vim.api.nvim_set_keymap
 -- nvim-tree
 map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
 -- nvim 基础操作
-map("n", "<C-y>", "\"+y", opt)
-map("n", "<C-p>", "\"+p", opt)
+-- map("n", "<C-y>", "\"+y", opt)
+-- map("n", "<C-p>", "\"+p", opt)
