@@ -24,4 +24,3 @@ autocmd("BufWritePre", {
 		end,
 })
 
-

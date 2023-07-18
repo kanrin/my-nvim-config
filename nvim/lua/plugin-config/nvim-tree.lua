@@ -115,15 +115,22 @@ local function on_attach(bufnr)
 end
 
 require("nvim-tree").setup({
-  on_attach = on_attach, 
+  on_attach = on_attach,
   sort_by = "case_sensitive",
   view = {
     width = 40,
   },
   renderer = {
     group_empty = true,
+    indent_marks = {
+        enable = true,
+    },
   },
   filters = {
     dotfiles = true,
   },
+  git = {
+      enable = true,
+  },
+  auto_close = true,
 })

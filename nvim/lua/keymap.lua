@@ -18,6 +18,6 @@ local keymap = vim.api.nvim_set_keymap
 keymap("n", "<A-m>", ":NvimTreeToggle<CR>", nopt)
 -- nvim 基础操作
 keymap("v", "<C-y>", '"+y', vopt)
-keymap("v", "<C-p>", '"+p', vopt)
+keymap("n", "<C-p>", '"+p', nopt)
 keymap("n", "<A-l>", ":bnext<CR>", nopt)
 keymap("n", "<A-h>", ":bprevious<CR>", nopt)
