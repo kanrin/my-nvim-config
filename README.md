@@ -42,3 +42,9 @@ cd fonts
 ./install.sh
 ```
 
+# KeyMap
+- `<A-m>` open nvim-tree
+- `<A-l>` open next buffer
+- `<A-h>` open previous buffer
+- `<C-y>` copy to system clipboard
+- `<C-p>` parse from system clipboard

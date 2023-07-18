@@ -2,16 +2,22 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-local opt = {
+local nopt = {
 		noremap = true,
 		silent = true,
 }
 
+local vopt = {
+		silent = false,
+}
+
 -- 本地变量
-local map = vim.api.nvim_set_keymap
+local keymap = vim.api.nvim_set_keymap
 
 -- nvim-tree
-map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
+keymap("n", "<A-m>", ":NvimTreeToggle<CR>", nopt)
 -- nvim 基础操作
--- map("n", "<C-y>", "\"+y", opt)
--- map("n", "<C-p>", "\"+p", opt)
+keymap("v", "<C-y>", '"+y', vopt)
+keymap("v", "<C-p>", '"+p', vopt)
+keymap("n", "<A-l>", ":bnext<CR>", nopt)
+keymap("n", "<A-h>", ":bprevious<CR>", nopt)
