@@ -8,4 +8,5 @@ return require('packer').startup(function()
     use {'https://gitlab.com/HiPhish/rainbow-delimiters.nvim', branch = 'master'}
     use {'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
     use {'nvim-tree/nvim-tree.lua', requires = {'nvim-tree/nvim-web-devicons'} }
+    use {'nvim-telescope/telescope.nvim', tag = '0.1.2', requires = { {'nvim-lua/plenary.nvim'} }}
 end)

@@ -20,6 +20,7 @@ require('plugin-config.nvim-tree')
 require('plugin-config.formatter')
 require('plugin-config.rainbow-delimiters')
 require('plugin-config.treesitter')
+require('plugin-config.telescope')
 
 
 -- autocmd

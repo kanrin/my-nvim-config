@@ -7,5 +7,10 @@
 			"filetypes": ["go"]
 		}
   },
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "git.enableGutters": false,
+  "git.addGBlameToBufferVar": false,
+  "git.addGBlameToVirtualText": false,
+  "git.blameUseRealTime": false,
+  "git.virtualTextPrefix": " "
 }
