@@ -8,7 +8,7 @@
 		}
   },
   "snippets.ultisnips.pythonPrompt": false,
-  "git.enableGutters": false,
+  "git.enableGutters": true,
   "git.addGBlameToBufferVar": false,
   "git.addGBlameToVirtualText": false,
   "git.blameUseRealTime": false,
