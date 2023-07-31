@@ -2,6 +2,9 @@ set nocompatible
 set hidden
 set nu
 set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030
 set backspace=indent,eol,start
 set nobackup
 set nowritebackup

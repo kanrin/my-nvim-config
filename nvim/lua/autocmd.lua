@@ -21,6 +21,7 @@ autocmd("BufWritePre", {
 		pattern = { "*.go" },
 		callback = function()
 				vim.api.nvim_command("silent call CocAction('runCommand', 'editor.action.organizeImport')")
+				-- vim.api.nvim_command("GoVet")
 		end,
 })
 

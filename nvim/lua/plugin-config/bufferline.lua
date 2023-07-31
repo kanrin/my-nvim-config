@@ -1,8 +1,4 @@
-local status, bufferline = pcall(require, "bufferline")
-if not status then
-    vim.notify("没有找到 bufferline")
-    return
-end
+local bufferline = require("bufferline")
 bufferline.setup {
     options = {
         mode = "buffers", -- set to "tabs" to only show tabpages instead
@@ -49,7 +45,7 @@ bufferline.setup {
         offsets = {
             {
                 filetype = "NvimTree",
-                text = "Project",
+                text = "󰭤 Project",
                 text_align = "left",
                 separator = true
             }
