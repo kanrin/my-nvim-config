@@ -12,16 +12,19 @@ autocmd("BufWritePost", {
 		group = myAutoGroup,
 		pattern = { "*.py", "*.js", "*.jsx", "*.go", "*.c", "*.cpp"},
 		callback = function()
-				vim.api.nvim_command('Format')
+				vim.lsp.buf.format { async = true }
 		end,
 })
 
-autocmd("BufWritePre", {
-		group = myAutoGroup,
-		pattern = { "*.go" },
-		callback = function()
-				vim.api.nvim_command("silent call CocAction('runCommand', 'editor.action.organizeImport')")
-				-- vim.api.nvim_command("GoVet")
-		end,
-})
 
+vim.api.nvim_create_autocmd('LspAttach', {
+  group = vim.api.nvim_create_augroup('UserLspConfig', {}),
+  callback = function(ev)
+    -- Enable completion triggered by <c-x><c-o>
+    vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
+
+    -- Buffer local mappings.
+    -- See `:help vim.lsp.*` for documentation on any of the below functions
+    local opts = { buffer = ev.buf }
+  end,
+})

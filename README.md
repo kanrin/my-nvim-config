@@ -1,5 +1,6 @@
 # my neovim config
-> neovim config for Orz  
+> neovim config for Orz.
+> Use Lsp
 
 # Before Install
 - you need install nodejs v14+ (it's need for [coc.nvim](https://github.com/neoclide/coc.nvim))
@@ -12,20 +13,9 @@
 - open neovim
 - `:PackerInstall`
 - wait for success
-## Step 3 install coc plugins
-- open neovim
-- `:CocInstall coc-marketplace`
-- wait for install success
-- you can run command `:CocList marketplace` for search your need plugins
-    - some recomand coc plugins:
-        - coc-git
-        - coc-snippets
-
 
 # Support
 - neovim 0.9.1
-- nodejs v14+
-
 
 # Better Experience
 - install nerd font
