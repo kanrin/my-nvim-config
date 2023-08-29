@@ -2,9 +2,6 @@
 > neovim config for Orz.
 > Use Lsp
 
-# Before Install
-- you need install nodejs v14+ (it's need for [coc.nvim](https://github.com/neoclide/coc.nvim))
-
 # Install
 ## Step 1 install script
 - clone project
