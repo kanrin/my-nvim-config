@@ -4,6 +4,7 @@ return require('packer').startup(function()
     use 'nvim-lua/plenary.nvim'
     use 'wbthomason/packer.nvim'
     use 'sbdchd/neoformat'
+	use {'s1n7ax/nvim-terminal'}
     use {'junegunn/fzf', run = 'fzf#install()'}
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
     use {'neoclide/coc.nvim', branch = 'release'}
