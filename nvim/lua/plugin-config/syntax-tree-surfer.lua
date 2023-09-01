@@ -155,8 +155,8 @@ sts.setup({
         ["for_statement"] = "ﭜ",
         ["while_statement"] = "ﯩ",
         ["switch_statement"] = "ﳟ",
-        ["function"] = "",
-        ["function_definition"] = "",
-        ["variable_declaration"] = "",
+        ["function"] = "󱈚",
+        ["function_definition"] = "󱈚",
+        ["variable_declaration"] = "󰅱",
     },
 })

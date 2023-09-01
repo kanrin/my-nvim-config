@@ -26,7 +26,7 @@ keymap("n", "<C-p>", '"+p', nopt)
 keymap("v", "<C-p>", '"+p', vopt)
 keymap("n", "<A-l>", ":bnext<CR>", nopt)
 keymap("n", "<A-h>", ":bprevious<CR>", nopt)
-keymap("t", "<ESC>", "<C-\\><C-n>", vopt)
+keymap("t", "<leader><ESC>", "<C-\\><C-n>", vopt)
 -- coc-git
 keymap("n", "<A-g>", ":CocCommand git.showBlameDoc<CR>", nopt)
 

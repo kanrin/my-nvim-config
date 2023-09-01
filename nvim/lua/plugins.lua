@@ -6,6 +6,7 @@ return require('packer').startup(function()
     use "ziontee113/syntax-tree-surfer"
     use 'sbdchd/neoformat'
     use "lukas-reineke/indent-blankline.nvim"
+    use { 'echasnovski/mini.nvim', branch = 'stable' }
     use { 's1n7ax/nvim-terminal' }
     use { 'junegunn/fzf', run = 'fzf#install()' }
     use { 'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons' }

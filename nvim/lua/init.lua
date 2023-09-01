@@ -24,6 +24,7 @@ require('plugin-config.terminal')
 require('plugin-config.telescope')
 require('plugin-config.syntax-tree-surfer')
 require('plugin-config.indent-blankline')
+require('plugin-config.mini')
 
 
 -- autocmd
