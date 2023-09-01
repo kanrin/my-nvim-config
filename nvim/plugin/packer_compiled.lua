@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/rainbow-delimiters.nvim",
     url = "https://gitlab.com/HiPhish/rainbow-delimiters.nvim"
   },
+  ["syntax-tree-surfer"] = {
+    loaded = true,
+    path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/syntax-tree-surfer",
+    url = "https://github.com/ziontee113/syntax-tree-surfer"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/telescope.nvim",

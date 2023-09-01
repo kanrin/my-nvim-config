@@ -3,6 +3,7 @@ return require('packer').startup(function()
     use 'gfanto/fzf-lsp.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'wbthomason/packer.nvim'
+    use "ziontee113/syntax-tree-surfer"
     use 'sbdchd/neoformat'
 	use {'s1n7ax/nvim-terminal'}
     use {'junegunn/fzf', run = 'fzf#install()'}

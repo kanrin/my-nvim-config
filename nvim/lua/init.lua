@@ -22,6 +22,7 @@ require('plugin-config.rainbow-delimiters')
 require('plugin-config.treesitter')
 require('plugin-config.terminal')
 require('plugin-config.telescope')
+require('plugin-config/syntax-tree-surfer')
 
 
 -- autocmd
