@@ -1,6 +1,6 @@
 set nocompatible
 set hidden
-set nu
+set relativenumber
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8

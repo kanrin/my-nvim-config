@@ -22,6 +22,7 @@ return require('packer').startup(function()
     use {'s1n7ax/nvim-terminal'}
     -- indent
     use 'lukas-reineke/indent-blankline.nvim'
+    use { 'echasnovski/mini.nvim', branch = 'stable' }
     use {'junegunn/fzf', run = 'fzf#install()'}
     use {'williamboman/nvim-lsp-installer', 'neovim/nvim-lspconfig'}
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
