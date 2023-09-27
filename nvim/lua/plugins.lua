@@ -20,6 +20,8 @@ return require('packer').startup(function()
     use 'f-person/git-blame.nvim'
     -- ter
     use {'s1n7ax/nvim-terminal'}
+    -- indent
+    use 'lukas-reineke/indent-blankline.nvim'
     use {'junegunn/fzf', run = 'fzf#install()'}
     use {'williamboman/nvim-lsp-installer', 'neovim/nvim-lspconfig'}
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
