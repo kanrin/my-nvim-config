@@ -29,6 +29,10 @@ cd fonts
 ./install.sh
 ```
 
+# Branch Info
+- `coc` branch is use coc plugin for Lsp, need install coc plugin
+- `lsp` branch is use neovim inner lsp, install is easily
+
 # KeyMap
 - `<A-m>` open nvim-tree
 - `<A-l>` open next buffer
