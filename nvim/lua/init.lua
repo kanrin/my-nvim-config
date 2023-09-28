@@ -1,9 +1,3 @@
--- basic
-vim.opt.ts=4
-vim.opt.softtabstop=4
-vim.opt.shiftwidth=4
-vim.opt.expandtab=true
-vim.opt.autoindent=true
 -- vim.opt.mouse=""
 
 require('plugins')
@@ -26,7 +20,8 @@ require('plugin-config.cmp')
 require('plugin-config.git')
 require('plugin-config.terminal')
 require('plugin-config.golang')
-
+require('plugin-config.indent-blankline')
+require('plugin-config.mini')
 
 
 -- autocmd

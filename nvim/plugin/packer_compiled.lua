@@ -119,10 +119,15 @@ _G.packer_plugins = {
     path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/fzf-lsp.nvim",
     url = "https://github.com/gfanto/fzf-lsp.nvim"
   },
-  ["git-blame.nvim"] = {
+  ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
-    url = "https://github.com/f-person/git-blame.nvim"
+    path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -133,6 +138,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["mini.nvim"] = {
+    loaded = true,
+    path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/mini.nvim",
+    url = "https://github.com/echasnovski/mini.nvim"
   },
   neoformat = {
     loaded = true,
@@ -148,11 +168,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/nvim-go",
     url = "https://github.com/crispgm/nvim-go"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/Users/cenghanlin/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,

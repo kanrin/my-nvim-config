@@ -1,4 +1,5 @@
 return require('packer').startup(function()
+    use {'williamboman/mason.nvim', 'williamboman/mason-lspconfig.nvim', 'neovim/nvim-lspconfig'}
     use 'navarasu/onedark.nvim'
     use 'gfanto/fzf-lsp.nvim'
     use 'nvim-lua/plenary.nvim'
@@ -17,11 +18,13 @@ return require('packer').startup(function()
     -- lspkind
     use 'onsails/lspkind-nvim'
     -- git
-    use 'f-person/git-blame.nvim'
+    use 'lewis6991/gitsigns.nvim'
     -- ter
-    use {'s1n7ax/nvim-terminal'}
+    use 's1n7ax/nvim-terminal'
+    -- indent
+    use 'lukas-reineke/indent-blankline.nvim'
+    use { 'echasnovski/mini.nvim', branch = 'stable' }
     use {'junegunn/fzf', run = 'fzf#install()'}
-    use {'williamboman/nvim-lsp-installer', 'neovim/nvim-lspconfig'}
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
     use {'crispgm/nvim-go', requires = 'nvim-lua/plenary.nvim'}
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
