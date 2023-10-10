@@ -27,6 +27,11 @@ keymap("n", "<A-h>", ":bprevious<CR>", nopt)
 keymap("t", "<ESC>", "<C-\\><C-n>", vopt)
 -- lsp 安装
 keymap("n", "<A-l>", ":LspInstall<CR>", nopt)
+-- golang
+keymap("n", "<leader>gc", ":GoCmt<CR>", nopt)
+-- git
+keymap("n", "<space>gg", ":Gitsigns toggle_current_line_blame<CR>", nopt)
+
 -- lsp
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)

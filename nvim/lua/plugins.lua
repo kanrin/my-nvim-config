@@ -23,10 +23,12 @@ return require('packer').startup(function()
     use 's1n7ax/nvim-terminal'
     -- indent
     use 'lukas-reineke/indent-blankline.nvim'
+    -- golang
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua'
     use { 'echasnovski/mini.nvim', branch = 'stable' }
     use {'junegunn/fzf', run = 'fzf#install()'}
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
-    use {'crispgm/nvim-go', requires = 'nvim-lua/plenary.nvim'}
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {'https://gitlab.com/HiPhish/rainbow-delimiters.nvim', branch = 'master', as = 'rainbow-delimiters.nvim'}
     use {'nvim-lualine/lualine.nvim', requires = { 'nvim-tree/nvim-web-devicons', opt = true } }

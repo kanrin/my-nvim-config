@@ -6,16 +6,24 @@ local myAutoGroup = vim.api.nvim_create_augroup("myAutoGroup", {
   clear = true,
 })
 local autocmd = vim.api.nvim_create_autocmd
-
+local goimport = require("go.format")
 
 autocmd("BufWritePost", {
 		group = myAutoGroup,
-		pattern = { "*.py", "*.js", "*.jsx", "*.go", "*.c", "*.cpp", "*.json", "*.erl"},
+		pattern = { "*.py", "*.js", "*.jsx", "*.c", "*.cpp", "*.json", "*.erl"},
 		callback = function()
 				vim.lsp.buf.format { async = true }
 		end,
 })
 
+-- go file auto format
+autocmd("BufWritePost", {
+		group = myAutoGroup,
+		pattern = { "*.go"},
+		callback = function()
+		    goimport.goimport()
+		end,
+})
 
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
