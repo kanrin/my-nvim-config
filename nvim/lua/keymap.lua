@@ -26,7 +26,7 @@ keymap("n", "<A-l>", ":bnext<CR>", nopt)
 keymap("n", "<A-h>", ":bprevious<CR>", nopt)
 keymap("t", "<ESC>", "<C-\\><C-n>", vopt)
 -- lsp 安装
-keymap("n", "<A-l>", ":LspInstall<CR>", nopt)
+keymap("n", "<A-L>", ":LspInstall<CR>", nopt)
 -- golang
 keymap("n", "<leader>gc", ":GoCmt<CR>", nopt)
 -- git
