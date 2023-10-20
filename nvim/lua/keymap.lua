@@ -28,9 +28,12 @@ keymap("t", "<ESC>", "<C-\\><C-n>", vopt)
 -- lsp 安装
 keymap("n", "<A-L>", ":LspInstall<CR>", nopt)
 -- golang
-keymap("n", "<leader>gc", ":GoCmt<CR>", nopt)
+keymap("n", "<space>gc", ":GoCmt<CR>", nopt)
 -- git
 keymap("n", "<space>gg", ":Gitsigns toggle_current_line_blame<CR>", nopt)
+-- save
+keymap("n", "<C-s>", ":w<CR>", nopt)
+keymap("n", "<C-S>", ":wa<CR>", nopt)
 
 -- lsp
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
