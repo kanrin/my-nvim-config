@@ -30,7 +30,7 @@ autocmd("BufWritePost", {
 		group = myAutoGroup,
 		pattern = { "*.lua", "*.cpp", "*.c", "*.cs", "*.jsx", "*.tsx", "*.json", "*.yaml"},
 		callback = function()
-            vim.runCommand("Format")
+            vim.cmd("Format")
 		end,
 })
 
