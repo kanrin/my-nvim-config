@@ -26,6 +26,7 @@ return require('packer').startup(function()
     -- golang
     use 'ray-x/go.nvim'
     use 'ray-x/guihua.lua'
+    use { 'mhartington/formatter.nvim' }
     use { 'echasnovski/mini.nvim', branch = 'stable' }
     use {'junegunn/fzf', run = 'fzf#install()'}
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}

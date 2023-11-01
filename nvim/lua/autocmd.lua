@@ -10,7 +10,7 @@ local goimport = require("go.format")
 
 autocmd("BufWritePost", {
 		group = myAutoGroup,
-		pattern = { "*.py", "*.js", "*.jsx", "*.c", "*.cpp", "*.json", "*.erl"},
+		pattern = { "*.py", "*.js", "*.ts"},
 		callback = function()
 				vim.lsp.buf.format { async = true }
 		end,
@@ -22,6 +22,15 @@ autocmd("BufWritePost", {
 		pattern = { "*.go"},
 		callback = function()
 		    goimport.goimport()
+		end,
+})
+
+
+autocmd("BufWritePost", {
+		group = myAutoGroup,
+		pattern = { "*.lua", "*.cpp", "*.c", "*.cs", "*.jsx", "*.tsx", "*.json", "*.yaml"},
+		callback = function()
+            vim.runCommand("Format")
 		end,
 })
 
