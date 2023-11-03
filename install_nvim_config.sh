@@ -33,13 +33,6 @@ else
     git clone -q --depth 1 https://github.com/wbthomason/packer.nvim ${PACKER_DIR} 
     check $?
 fi
-echo -n "Install vim-go    "
-if [ -d ${VIM_GO_DIR} ]; then
-    pass
-else
-    git clone -q https://github.com/fatih/vim-go.git ${VIM_GO_DIR}
-    check $?
-fi
 mkdir -p $INSTALL_DIR
 cp -r nvim/* $INSTALL_DIR
 echo "Complete"
