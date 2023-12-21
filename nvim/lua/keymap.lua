@@ -31,11 +31,10 @@ keymap("n", "<A-L>", ":LspInstall<CR>", nopt)
 keymap("n", "<space>gc", ":GoCmt<CR>", nopt)
 -- git
 keymap("n", "<space>gg", ":Gitsigns toggle_current_line_blame<CR>", nopt)
+keymap("n", "<space>bl", ":Gitsigns blame_line<CR>", nopt)
 
 -- json format
-vim.keymap.set('n', '<leader>J', function()
-    vim.cmd([[%!python -m json.tool]])
-end, {})
+vim.keymap.set('n', '<leader>J','%!python -m json.tool<CR>', vopt)
 
 -- vim.keymap.set('n', '<space>f', function()
 --   vim.lsp.buf.format { async = true }

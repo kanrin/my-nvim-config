@@ -28,13 +28,30 @@ autocmd("BufWritePost", {
 
 autocmd("BufWritePost", {
 		group = myAutoGroup,
-		pattern = { "*.lua", "*.cpp", "*.c", "*.cs", "*.jsx", "*.tsx", "*.json", "*.yaml"},
+		pattern = { "*.lua", "*.cpp", "*.c", "*.cs", "*.jsx", "*.tsx", "*.yaml" },
 		callback = function()
             vim.cmd("Format")
 		end,
 })
 
-vim.api.nvim_create_autocmd('LspAttach', {
+autocmd("BufWritePost", {
+		group = myAutoGroup,
+		pattern = { "*.json" },
+		callback = function()
+            vim.cmd("%!python -m json.tool<CR>")
+		end,
+})
+
+autocmd("BufWritePost", {
+		group = myAutoGroup,
+		pattern = { "*.sh" },
+		callback = function()
+            		-- vim.cmd("")
+            require("shfmt").formatting()
+		end,
+})
+
+autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
   callback = function(ev)
     -- Enable completion triggered by <c-x><c-o>
