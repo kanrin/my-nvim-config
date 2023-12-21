@@ -23,6 +23,8 @@ return require('packer').startup(function()
     use 's1n7ax/nvim-terminal'
     -- indent
     use 'lukas-reineke/indent-blankline.nvim'
+    --- shell
+    use 'yuchanns/shfmt.nvim'
     -- golang
     use 'ray-x/go.nvim'
     use 'ray-x/guihua.lua'

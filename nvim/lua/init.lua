@@ -22,6 +22,7 @@ require('plugin-config.terminal')
 require('plugin-config.golang')
 require('plugin-config.indent-blankline')
 require('plugin-config.mini')
+require('plugin-config.shfmt')
 
 
 -- autocmd
