@@ -2,9 +2,6 @@
 
 INSTALL_DIR=$HOME/.config/nvim
 
-PACKER_DIR=${HOME}/.local/share/nvim/site/pack/packer/start/packer.nvim
-VIM_GO_DIR=${HOME}/.local/share/nvim/site/pack/plugins/start/vim-go
-
 success() {
     echo -e "[\\033[0;32mOK\\033[0;39m]"
 }
@@ -26,13 +23,10 @@ check() {
     fi
 }
 
-echo -n "Install Packer    "
-if [ -d ${PACKER_DIR} ]; then
-    pass
-else
-    git clone -q --depth 1 https://github.com/wbthomason/packer.nvim ${PACKER_DIR} 
-    check $?
-fi
-mkdir -p $INSTALL_DIR
-cp -r nvim/* $INSTALL_DIR
+
+echo -en "Install NvChad\t"
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+check $?
+rm -rf $INSTALL_DIR/lua/custem
+cp -r nvim/custem $INSTALL_DIR/lua/custem
 echo "Complete"

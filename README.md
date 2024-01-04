@@ -1,18 +1,11 @@
 # my neovim config
 > neovim config for Orz.
-> Use Lsp
-
-# Before Install
-- you need install nodejs v14+ (it's need for [coc.nvim](https://github.com/neoclide/coc.nvim))
+> Based on [nvchad](https://nvchad.com)
 
 # Install
 ## Step 1 install script
 - clone project
 - `bash install_nvim_config.sh`
-## Step 2 install plugins
-- open neovim
-- `:PackerInstall`
-- wait for success
 
 # Support
 - neovim 0.9.1
@@ -31,10 +24,3 @@ git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 ./install.sh
 ```
-
-# KeyMap
-- `<A-m>` open nvim-tree
-- `<A-l>` open next buffer
-- `<A-h>` open previous buffer
-- `<C-y>` copy to system clipboard
-- `<C-p>` parse from system clipboard
