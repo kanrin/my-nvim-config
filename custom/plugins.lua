@@ -49,6 +49,35 @@ local plugins = {
 
   {
     "HiPhish/rainbow-delimiters.nvim",
+    lazy = false,
+    config = function()
+      require("rainbow-delimiters.setup").setup()
+    end,
+  },
+
+  -- {
+  --   "echasnovski/mini.comment",
+  --   version = "*",
+  --   config = function()
+  --     require("mini.comment").setup()
+  --   end,
+  -- },
+
+  {
+    "echasnovski/mini.tabline",
+    version = "*",
+    config = function()
+      require("mini.tabline").setup()
+    end,
+  },
+
+  {
+    "echasnovski/mini.move",
+    version = "*",
+    config = function()
+      require("mini.move").setup()
+    end,
+    opts = overrides.mini_move,
   },
 
   -- To make a plugin not be loaded

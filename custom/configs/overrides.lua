@@ -86,4 +86,47 @@ M.nvimtree = {
   },
 }
 
+M.mini_move = {
+  -- Module mappings. Use `''` (empty string) to disable one.
+  mappings = {
+    -- Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
+    left = "<M-h>",
+    right = "<M-l>",
+    down = "<M-j>",
+    up = "<M-k>",
+
+    -- Move current line in Normal mode
+    line_left = "<M-h>",
+    line_right = "<M-l>",
+    line_down = "<M-j>",
+    line_up = "<M-k>",
+  },
+
+  -- Options which control moving behavior
+  options = {
+    -- Automatically reindent selection during linewise vertical move
+    reindent_linewise = true,
+  },
+}
+
+M.rainbow_delimiters = {
+  query = {
+    [""] = "rainbow-delimiters",
+    lua = "rainbow-blocks",
+  },
+  priority = {
+    [""] = 110,
+    lua = 210,
+  },
+  highlight = {
+    "RainbowDelimiterRed",
+    "RainbowDelimiterYellow",
+    "RainbowDelimiterBlue",
+    "RainbowDelimiterOrange",
+    "RainbowDelimiterGreen",
+    "RainbowDelimiterViolet",
+    "RainbowDelimiterCyan",
+  },
+}
+
 return M

@@ -5,7 +5,7 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme_toggle = { "onedark", "one_light", "onenord", "nord" },
+  theme_toggle = { "onenord", "one_light", "onenord", "onenord" },
   theme = "onenord", -- default theme
 
   hl_override = highlights.override,
@@ -40,12 +40,12 @@ M.ui = {
     },
 
     buttons = {
-      { "  Find File", "SPACE f f", "Telescope find_files" },
-      { "󰈚  Recent Files", "SPACE f o", "Telescope oldfiles" },
-      { "󰈭  Find Word", "SPACE f w", "Telescope live_grep" },
-      { "  Bookmarks", "SPACE m a", "Telescope marks" },
-      { "  Themes", "SPACE t h", "Telescope themes" },
-      { "  Mappings", "SPACE c h", "NvCheatsheet" },
+      { "  查找文件", "SPACE f f", "Telescope find_files" },
+      { "󰈚  最近文件", "SPACE f o", "Telescope oldfiles" },
+      { "󰈭  查找文本", "SPACE f w", "Telescope live_grep" },
+      { "  查找书签", "SPACE m a", "Telescope marks" },
+      { "  查看主题", "SPACE t h", "Telescope themes" },
+      { "  操作指南", "SPACE c h", "NvCheatsheet" },
     },
   },
 }
