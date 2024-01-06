@@ -1,5 +1,4 @@
 local overrides = require "custom.configs.overrides"
-
 ---@type NvPluginSpec[]
 local plugins = {
 
@@ -55,25 +54,10 @@ local plugins = {
     end,
   },
 
-  -- {
-  --   "echasnovski/mini.comment",
-  --   version = "*",
-  --   config = function()
-  --     require("mini.comment").setup()
-  --   end,
-  -- },
-
-  {
-    "echasnovski/mini.tabline",
-    version = "*",
-    config = function()
-      require("mini.tabline").setup()
-    end,
-  },
-
   {
     "echasnovski/mini.move",
     version = "*",
+    lazy = false,
     config = function()
       require("mini.move").setup()
     end,

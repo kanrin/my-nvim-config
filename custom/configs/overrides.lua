@@ -102,7 +102,6 @@ M.mini_move = {
     line_up = "<M-k>",
   },
 
-  -- Options which control moving behavior
   options = {
     -- Automatically reindent selection during linewise vertical move
     reindent_linewise = true,
