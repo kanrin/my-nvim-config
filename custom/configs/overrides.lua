@@ -1,7 +1,8 @@
 local M = {}
 
-local lsplist = require "custom/configs/lsplist"
+local lsplist = require "custom.configs.lsplist"
 local ensure_installed = {}
+
 for lsp, _ in pairs(lsplist) do
   table.insert(ensure_installed, lsp)
 end

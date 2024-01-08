@@ -8,14 +8,14 @@
 -- }
 
 local servers = {
-  ["lua-language-server"] = "lua-language-server",
-  ["stylua"] = "stylua",
-  ["css-lsp"] = "css-lsp",
-  ["html-lsp"] = "html-lsp",
-  ["typescript-language-server"] = "typescript-language-server",
-  ["prettier"] = "prettier",
+  ["lua-language-server"] = "lua_ls",
+  ["css-lsp"] = "cssls",
+  ["tailwindcss-language-server"] = "tailwindcss",
+  ["html-lsp"] = "html",
+  ["typescript-language-server"] = "tsserver",
+  -- ["prettier"] = "prettier",
   ["clangd"] = "clangd",
-  ["clang-format"] = "clang-format",
+  -- ["clang-format"] = "clang-format",
   ["gopls"] = "gopls",
   ["pyright"] = "pyright",
   ["erlang-ls"] = "erlangls",
