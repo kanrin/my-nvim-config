@@ -23,10 +23,15 @@ check() {
     fi
 }
 
-
+if [ -d ~/.config/nvim ]; then
+  echo "Backup old config to ~/.config/nvim_old"
+  mv  ~/.config/nvim ~/.config/nvim_old
+  rm -rf ~/.local/share/nvim
+  rm -rf ~/.local/state/nvim
+fi
 echo -en "Install NvChad\t"
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 check $?
-rm -rf $INSTALL_DIR/lua/custem
-cp -r nvim/custem $INSTALL_DIR/lua/custem
+rm -rf $INSTALL_DIR/lua/custom
+cp -r nvim/custem $INSTALL_DIR/lua/custom
 echo "Complete"
