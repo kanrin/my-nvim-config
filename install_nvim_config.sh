@@ -23,6 +23,8 @@ check() {
     fi
 }
 
+PERSION_DIR=custom
+
 if [ -d ~/.config/nvim ]; then
   echo "Backup old config to ~/.config/nvim_old"
   mv  ~/.config/nvim ~/.config/nvim_old
@@ -32,6 +34,6 @@ fi
 echo -en "Install NvChad\t"
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 check $?
-rm -rf $INSTALL_DIR/lua/custom
-cp -r nvim/custem $INSTALL_DIR/lua/custom
+rm -rf $INSTALL_DIR/lua/${PERSION_DIR}
+cp -r ${PERSION_DIR} $INSTALL_DIR/lua/${PERSION_DIR}
 echo "Complete"
