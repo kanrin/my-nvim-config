@@ -1,5 +1,11 @@
 local M = {}
 
+local lsplist = require("custom/configs/lsplist")
+local ensure_installed = {}
+for lsp, _ in pairs(lsplist) do
+  table.insert(ensure_installed, lsp)
+end
+
 M.treesitter = {
   ensure_installed = {
     "vim",
@@ -43,31 +49,7 @@ M.treesitter = {
 }
 
 M.mason = {
-  ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
-
-    -- web dev stuff
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "deno",
-    "prettier",
-
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
-
-    "lua-language-server",
-    "gopls",
-    "pyright",
-    "erlang_ls",
-    "ruby_ls",
-    "perlls",
-    "julials",
-    "csharp_ls",
-  },
+  ensure_installed = ensure_installed,
 }
 
 -- git support in nvimtree

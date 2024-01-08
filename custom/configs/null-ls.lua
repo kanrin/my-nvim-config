@@ -28,7 +28,6 @@ local sources = {
   b.formatting.erlfmt,
   -- go
   b.formatting.goimports,
-
 }
 
 null_ls.setup {
