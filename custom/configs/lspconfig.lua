@@ -5,7 +5,7 @@ local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
 -- local servers = { "html", "cssls", "tsserver", "clangd", "pyright", "gopls"}
-local servers = require("custom/configs/lsplist")
+local servers = require "custom/configs/lsplist"
 
 for _, lsp in pairs(servers) do
   lspconfig[lsp].setup {
@@ -14,5 +14,5 @@ for _, lsp in pairs(servers) do
   }
 end
 
--- 
+--
 -- lspconfig.pyright.setup { blabla}
