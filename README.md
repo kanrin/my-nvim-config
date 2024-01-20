@@ -1,15 +1,12 @@
 # my neovim config
 > neovim config for Orz.
-> Use Lsp
+> Based on [nvchad](https://nvchad.com)
+
 
 # Install
 ## Step 1 install script
 - clone project
 - `bash install_nvim_config.sh`
-## Step 2 install plugins
-- open neovim
-- `:PackerInstall`
-- wait for success
 
 # Support
 - neovim 0.9.1
@@ -28,14 +25,3 @@ git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 ./install.sh
 ```
-
-# Branch Info
-- `coc` branch is use coc plugin for Lsp, need install coc plugin
-- `lsp` branch is use neovim inner lsp, install is easily
-
-# KeyMap
-- `<A-m>` open nvim-tree
-- `<A-l>` open next buffer
-- `<A-h>` open previous buffer
-- `<C-y>` copy to system clipboard
-- `<C-p>` parse from system clipboard
