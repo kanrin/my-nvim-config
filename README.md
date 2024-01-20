@@ -2,6 +2,7 @@
 > neovim config for Orz.
 > Based on [nvchad](https://nvchad.com)
 
+
 # Install
 ## Step 1 install script
 - clone project
