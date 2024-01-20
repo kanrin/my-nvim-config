@@ -1,11 +1,7 @@
 local M = {}
 
 local lsplist = require "custom.configs.lsplist"
-local ensure_installed = {}
 
-for lsp, _ in pairs(lsplist) do
-  table.insert(ensure_installed, lsp)
-end
 
 M.treesitter = {
   ensure_installed = {
@@ -43,14 +39,11 @@ M.treesitter = {
   },
   indent = {
     enable = true,
-    -- disable = {
-    --   "python"
-    -- },
   },
 }
 
 M.mason = {
-  ensure_installed = ensure_installed,
+  ensure_installed = lsplist.mason,
 }
 
 -- git support in nvimtree

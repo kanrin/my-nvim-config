@@ -1,28 +1,35 @@
--- local servers = {
---   "html",
---   "cssls",
---   "tsserver",
---   "clangd",
---   "pyright",
---   "gopls",
--- }
+-- lsp相关配置
+local M = {}
 
-local servers = {
-  ["lua-language-server"] = "lua_ls",
-  ["css-lsp"] = "cssls",
-  ["tailwindcss-language-server"] = "tailwindcss",
-  ["html-lsp"] = "html",
-  ["typescript-language-server"] = "tsserver",
-  -- ["prettier"] = "prettier",
-  ["clangd"] = "clangd",
-  -- ["clang-format"] = "clang-format",
-  ["gopls"] = "gopls",
-  ["pyright"] = "pyright",
-  ["erlang-ls"] = "erlangls",
-  ["ruby-lsp"] = "ruby_ls",
-  ["perlnavigator"] = "perlls",
-  ["julia-lsp"] = "julials",
-  ["csharp-language-server"] = "csharp_ls",
+M.lsp = {
+  "lua_ls",
+  "cssls",
+  "html",
+  "clangd",
+  "gopls",
+  "pyright",
+  "erlangls",
+  "ruby_ls",
+  "perlls",
+  "julials",
+  "csharp_ls",
+  "tsserver",
 }
 
-return servers
+M.mason = {
+  "prettier",
+  "css-lsp",
+  "html-lsp",
+  "clangd",
+  "gopls",
+  "pyright",
+  "erlang-ls",
+  "ruby-lsp",
+  "perlnavigator",
+  "julia-lsp",
+  "lua-language-server",
+  "csharp-language-server",
+  "typescript-language-server",
+}
+
+return M
