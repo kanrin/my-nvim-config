@@ -64,6 +64,26 @@ local plugins = {
     opts = overrides.mini_move,
   },
 
+  {
+    "echasnovski/mini.surround",
+    lazy = false,
+    version = "*",
+    config = function()
+      require("mini.surround").setup()
+    end,
+    opts = overrides.mini_surround,
+  },
+
+  {
+    "echasnovski/mini.align",
+    version = "*",
+    lazy = false,
+    config = function()
+      require("mini.align").setup()
+    end,
+    opts = overrides.mini_align,
+  },
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
