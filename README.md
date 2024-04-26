@@ -1,6 +1,6 @@
 # my neovim config
 > neovim config for Orz.
-> Based on [nvchad](https://nvchad.com)
+> Based on [nvchad](https://nvchad.com)v2.0
 
 
 # Install

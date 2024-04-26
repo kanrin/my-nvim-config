@@ -32,7 +32,7 @@ if [ -d ~/.config/nvim ]; then
   rm -rf ~/.local/state/nvim
 fi
 echo -en "Install NvChad\t"
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 check $?
 rm -rf $INSTALL_DIR/lua/${PERSION_DIR}
 cp -r ${PERSION_DIR} $INSTALL_DIR/lua/${PERSION_DIR}
