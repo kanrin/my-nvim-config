@@ -12,11 +12,14 @@
 - neovim 0.9.1
 
 # Better Experience
+
 - install nerd font
 ```shell
+# MacOS
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
+
 - install powerline font
 ```shell
 # refer to https://github.com/powerline/fonts
