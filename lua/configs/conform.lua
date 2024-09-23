@@ -1,8 +1,11 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    css = { "prettier" },
+    html = { "prettier" },
+    go = { "goimports" },
+    python = { "autoflake", "autopep8" },
+    java = { "google-java-format" },
   },
 
   -- format_on_save = {
@@ -12,4 +15,4 @@ local options = {
   -- },
 }
 
-return options
+require("conform").setup(options)
