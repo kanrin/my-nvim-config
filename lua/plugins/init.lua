@@ -71,6 +71,7 @@ return {
       require("mini.surround").setup()
       require("mini.git").setup()
       require("mini.notify").setup()
+      vim.notify = require('mini.notify').make_notify()
     end,
   },
   -- {
@@ -113,29 +114,7 @@ return {
     "HiPhish/rainbow-delimiters.nvim",
     lazy = false,
     config = function()
-      require("rainbow-delimiters.setup").setup {
-        strategy = {
-          [""] = rainbow_delimiters.strategy["global"],
-          vim = rainbow_delimiters.strategy["local"],
-        },
-        query = {
-          [""] = "rainbow-delimiters",
-          lua = "rainbow-blocks",
-        },
-        priority = {
-          [""] = 110,
-          lua = 210,
-        },
-        highlight = {
-          "RainbowDelimiterRed",
-          "RainbowDelimiterYellow",
-          "RainbowDelimiterBlue",
-          "RainbowDelimiterOrange",
-          "RainbowDelimiterGreen",
-          "RainbowDelimiterViolet",
-          "RainbowDelimiterCyan",
-        },
-      }
+      require("rainbow-delimiters.setup").setup()
     end,
   },
 }
