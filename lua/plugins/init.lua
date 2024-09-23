@@ -63,30 +63,24 @@ return {
     },
   },
   {
-    "echasnovski/mini.comment",
+    "echasnovski/mini.nvim",
     version = "*",
     lazy = false,
     config = function()
       require("mini.comment").setup()
-    end,
-  },
-  {
-    "echasnovski/mini.surround",
-    version = "*",
-    lazy = false,
-    config = function()
       require("mini.surround").setup()
-    end,
-  },
-  {
-    "echasnovski/mini-git",
-    lazy = false,
-    version = false,
-    main = "mini.git",
-    config = function()
       require("mini.git").setup()
+      require("mini.notify").setup()
     end,
   },
+  -- {
+  --   "rcarriga/nvim-notify",
+  --   version = "*",
+  --   lazy = false,
+  --   config = function()
+  --     vim.notify = require("notify")
+  --   end,
+  -- },
   {
     "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
     version = "*",
@@ -106,12 +100,42 @@ return {
   },
   {
     "neolooong/whichpy.nvim",
-    ft = { "py", "pyc", "pyd", "pyi" },
+    ft = { "python" },
+
     opts = {},
   },
   {
     "posva/vim-vue",
     ft = "vue",
     opts = {},
+  },
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    lazy = false,
+    config = function()
+      require("rainbow-delimiters.setup").setup {
+        strategy = {
+          [""] = rainbow_delimiters.strategy["global"],
+          vim = rainbow_delimiters.strategy["local"],
+        },
+        query = {
+          [""] = "rainbow-delimiters",
+          lua = "rainbow-blocks",
+        },
+        priority = {
+          [""] = 110,
+          lua = 210,
+        },
+        highlight = {
+          "RainbowDelimiterRed",
+          "RainbowDelimiterYellow",
+          "RainbowDelimiterBlue",
+          "RainbowDelimiterOrange",
+          "RainbowDelimiterGreen",
+          "RainbowDelimiterViolet",
+          "RainbowDelimiterCyan",
+        },
+      }
+    end,
   },
 }
