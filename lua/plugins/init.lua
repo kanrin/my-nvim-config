@@ -79,6 +79,15 @@ return {
     end,
   },
   {
+    "echasnovski/mini-git",
+    lazy = false,
+    version = false,
+    main = "mini.git",
+    config = function()
+      require("mini.git").setup()
+    end,
+  },
+  {
     "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
     version = "*",
     lazy = false,
