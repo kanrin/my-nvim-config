@@ -4,9 +4,19 @@
 
 
 # Install
-## Step 1 install script
-- clone project
-- `bash install_nvim_config.sh`
+## Post Install
+- git
+- neovim 0.10.1 and upper
+## Install Config
+- on Linux or MacOS
+```shell
+# Linux / MacOS
+git clone https://github.com/kanrin/my-nvim-config.git $HOME/.config/nvim
+```
+- on Windows
+```powershell
+git clone https://github.com/kanrin/my-nvim-config.git $env:USERPROFILE\AppData\Local\nvim
+```
 
 # Support
 - neovim 0.10.1
