@@ -4,9 +4,13 @@
 
 
 # Install
-## Post Install
+## Pre-requisites
 - git
 - neovim 0.10.1 and upper
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- gcc
+- make
+
 ## Install Config
 - on Linux or MacOS
 ```shell
@@ -19,7 +23,7 @@ git clone https://github.com/kanrin/my-nvim-config.git $env:USERPROFILE\AppData\
 ```
 
 # Support
-- neovim 0.10.1
+- neovim 0.10
 
 # Better Experience
 
