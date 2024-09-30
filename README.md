@@ -9,7 +9,7 @@
 - `bash install_nvim_config.sh`
 
 # Support
-- neovim 0.9.1
+- neovim 0.10.1
 
 # Better Experience
 
