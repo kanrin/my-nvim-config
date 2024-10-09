@@ -71,17 +71,9 @@ return {
       require("mini.surround").setup()
       require("mini.git").setup()
       require("mini.notify").setup()
-      vim.notify = require('mini.notify').make_notify()
+      vim.notify = require("mini.notify").make_notify()
     end,
   },
-  -- {
-  --   "rcarriga/nvim-notify",
-  --   version = "*",
-  --   lazy = false,
-  --   config = function()
-  --     vim.notify = require("notify")
-  --   end,
-  -- },
   {
     "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
     version = "*",
