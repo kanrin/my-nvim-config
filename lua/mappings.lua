@@ -5,5 +5,6 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 
 map("i", "jk", "<ESC>")
+map("i", "<leader>pvm", ":MarkdownPreview\r")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

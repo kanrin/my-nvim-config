@@ -67,21 +67,17 @@ return {
     version = "*",
     lazy = false,
     config = function()
+      require("mini.align").setup()
       require("mini.comment").setup()
-      require("mini.surround").setup()
       require("mini.git").setup()
+      require("mini.move").setup()
       require("mini.notify").setup()
-      vim.notify = require('mini.notify').make_notify()
+      require("mini.pick").setup()
+      require("mini.surround").setup()
+      require('mini.indentscope').setup()
+      vim.notify = require("mini.notify").make_notify()
     end,
   },
-  -- {
-  --   "rcarriga/nvim-notify",
-  --   version = "*",
-  --   lazy = false,
-  --   config = function()
-  --     vim.notify = require("notify")
-  --   end,
-  -- },
   {
     "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
     version = "*",
@@ -116,5 +112,35 @@ return {
     config = function()
       require("rainbow-delimiters.setup").setup()
     end,
+  },
+  {
+    "roobert/tailwindcss-colorizer-cmp.nvim",
+    -- optionally, override the default options:
+    config = function()
+      require("tailwindcss-colorizer-cmp").setup {
+        color_square_width = 2,
+      }
+    end,
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    config = function()
+      require("treesitter-context").setup()
+    end,
+    lazy = false,
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    ft= {"html", "typescriptreact", "javascriptreact"}
   },
 }
