@@ -75,6 +75,7 @@ return {
       require("mini.pick").setup()
       require("mini.surround").setup()
       require('mini.indentscope').setup()
+      require('mini.cursorword').setup()
       vim.notify = require("mini.notify").make_notify()
     end,
   },
