@@ -8,6 +8,8 @@ local options = {
     ["c++"] = { "clang-format" },
     ["c#"] = { "clang-format" },
     ["_"] = { "prettierd" },
+    ["svg"] = { "xmlformatter" },
+    ["xml"] = { "xmlformatter" },
   },
 
   format_on_save = {
