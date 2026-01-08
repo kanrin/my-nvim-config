@@ -7,9 +7,10 @@ local options = {
     ["c"] = { "clang-format" },
     ["c++"] = { "clang-format" },
     ["c#"] = { "clang-format" },
+    svg = { "xmlformatter" },
+    xml = { "xmlformatter" },
+    php = { "pretty-php" },
     ["_"] = { "prettierd" },
-    ["svg"] = { "xmlformatter" },
-    ["xml"] = { "xmlformatter" },
   },
 
   format_on_save = {
