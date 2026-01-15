@@ -159,18 +159,15 @@ return {
     build = vim.fn.has "win32" ~= 0 and "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false"
       or "make",
     event = "VeryLazy",
-    version = false, -- 永远不要将此值设置为 "*"！永远不要！
+    version = false,
     ---@module 'avante'
     ---@type avante.Config
     opts = {
-      -- 在此处添加任何选项
-      -- 例如
       provider = "gemini",
     },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
-      --- 以下依赖项是可选的，
       "nvim-telescope/telescope.nvim", -- 用于文件选择器提供者 telescope
       "hrsh7th/nvim-cmp", -- avante 命令和提及的自动完成
       "ibhagwan/fzf-lua", -- 用于文件选择器提供者 fzf

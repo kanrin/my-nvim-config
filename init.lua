@@ -35,3 +35,5 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.diagnostic.config { virtual_lines = true, virtual_text = false }
