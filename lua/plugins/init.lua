@@ -17,6 +17,8 @@ return {
   },
   {
     "williamboman/mason.nvim",
+    lazy = true,
+    cmd = { "Mason" },
     opts = {
       pkgs = {
         "pretty-php",
@@ -107,8 +109,8 @@ return {
   },
   {
     "neolooong/whichpy.nvim",
+    cmd = { "WhichPy" },
     ft = { "python" },
-
     opts = {},
   },
   {
@@ -135,6 +137,7 @@ return {
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    lazy = true,
     build = "cd app && yarn install",
     init = function()
       vim.g.mkdp_filetypes = { "markdown" }
