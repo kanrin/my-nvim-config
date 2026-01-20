@@ -1,16 +1,13 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
   },
-
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
-    version = "2.3.0",
+    version = "2.3.0", -- use 2.3.0 to ignore warn / but nvchad update lspconfig ill update lspconfig
     config = function()
       require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
