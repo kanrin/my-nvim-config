@@ -199,4 +199,13 @@ return {
       },
     },
   },
+  {
+    "romus204/go-tagger.nvim",
+    ft = { "go" },
+    config = function()
+      require("go-tagger").setup {
+        skip_private = true, -- Skip unexported fields (starting with lowercase)
+      }
+    end,
+  },
 }
