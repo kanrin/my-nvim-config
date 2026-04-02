@@ -2,7 +2,11 @@ local options = {
   formatters_by_ft = {
     lua = { "stylua" },
     go = { "goimports" },
-    python = { "black", "ruff" },
+    python = {
+      "ruff_fix",
+      "ruff_format",
+      "ruff_organize_imports",
+    },
     java = { "google-java-format" },
     ["c"] = { "clang-format" },
     ["c++"] = { "clang-format" },
