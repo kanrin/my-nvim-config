@@ -67,7 +67,6 @@ return {
   },
   {
     "roobert/tailwindcss-colorizer-cmp.nvim",
-    -- optionally, override the default options:
     config = function()
       require("tailwindcss-colorizer-cmp").setup {
         color_square_width = 2,
@@ -83,14 +82,6 @@ return {
       vim.g.mkdp_filetypes = { "markdown" }
     end,
     ft = { "markdown" },
-  },
-  {
-    "nvim-treesitter/nvim-treesitter-context",
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    config = function()
-      require("treesitter-context").setup()
-    end,
-    lazy = false,
   },
   {
     "windwp/nvim-ts-autotag",
