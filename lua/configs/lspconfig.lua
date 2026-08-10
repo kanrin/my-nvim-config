@@ -9,6 +9,8 @@ local servers = {
   "ts_ls",
   "biome",
   "stylua",
+  "wc_language_server",
+  "buf_ls",
 }
 vim.lsp.enable(servers)
 -- vim.lsp.log.set_level(0)

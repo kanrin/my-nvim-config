@@ -18,6 +18,7 @@ local options = {
     typescript = { "biome" },
     javascript = { "biome" },
     json = { "biome" },
+    proto = { "buf_ls" },
     ["_"] = { "prettierd" },
     -- html = { "prettier" },
   },
